@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Header } from './Header';
-
+import Header from './Header';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
       <Header title="Anthony Camarillo" />
+      <Footer title="Built With: "/>      
       {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
