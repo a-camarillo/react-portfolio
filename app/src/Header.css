@@ -1,6 +1,6 @@
 .Header {
   background-color: #004953;
-  min-height: 25vh;
+  min-height: 20vh;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -8,4 +8,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.Header h1 {
+  padding-bottom: -20px;
 }

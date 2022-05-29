@@ -1,0 +1,23 @@
+.Footer {
+    background-color: #004953;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+.Footer p {
+    display: inline;
+}
+
+.Footer a {
+    position: relative;
+}
+
+.Footer-logo {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    width: 35px;
+    height: 35px;
+}
+

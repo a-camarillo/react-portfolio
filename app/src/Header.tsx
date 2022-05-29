@@ -1,10 +1,14 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import './Header.css';
-import { NavBar } from './NavBar';
+import  NavBar from './NavBar';
 import { TextProp } from './interfaces';
 
-export const Header: FunctionComponent<TextProp> = ({ title }) => 
+const itemList = ["About Me", "Projects","Tools", "Contact Me"]
+
+const Header = ({ title }: TextProp) => 
     <div className="Header">    
         <h1>{ title }</h1>
-            <NavBar items={["About Me", "Projects","Tools"]}/>
+            <NavBar items={itemList}/>
     </div>
+
+export default Header;
