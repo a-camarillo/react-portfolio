@@ -1,9 +1,12 @@
-.Footer {
+/* .Footer {
     background-color: #004953;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-self: flex-end;
 }
 
 .Footer p {
@@ -14,10 +17,9 @@
     position: relative;
 }
 
+*/
 .Footer-logo {
-    display: inline-block;
     padding: 5px 10px 5px 10px;
     width: 35px;
     height: 35px;
 }
-
