@@ -1,20 +1,30 @@
 import React from 'react';
-import './NavBar.css';
-import { TextList } from './interfaces';
+import { ILink } from './interfaces';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-const NavBar = ({ items }: TextList) => {
-    const itemList = items.map((item:string) => 
-        <Nav.Link className="NavText">
-            { item }
-        </Nav.Link>
-    )
+let smoothScroll = (event: React.MouseEvent<HTMLElement>, id:string) => {
+    event.preventDefault();
+    document.getElementById(id)!.scrollIntoView({
+        behavior: "smooth",
+    });
+}
+
+interface ILinks{
+    links: ILink[]
+}
+
+const NavBar = ({ links }: ILinks) => {
+    const navList = links.map((link: ILink) => 
+            <Nav.Link className="NavText" href={ link.href }onClick={(event) => smoothScroll(event, link.id)}>
+                { link.id }
+            </Nav.Link>
+    ) 
     return (
-        <Navbar className="NavBar" bg="light" expand="lg">
-                { itemList }
+        <Navbar className="justify-content-center" id="NavBar" bg="light" expand="sm">
+                { navList }
         </Navbar>
     )
-}
+};
 
 export default NavBar;
