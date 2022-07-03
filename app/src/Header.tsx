@@ -10,21 +10,21 @@ const links = [
     { id: "About", href: "#About" },
     { id: "Projects", href: "#Projects" },
     { id: "Tools", href: "#Tools" },
-    { id: "Contact", href: "#Contact" }
+    { id: "Connect", href: "#Connect" }
 ]
 
 
 const Header = ({ title }: Title) =>
-    <Container className="Header container">
+    <Container className="header">
         <Row className="justify-content-md-center">
             <Col>
                 <h1 className="text-left">{title}</h1>
-                <h2 className="text-left">Full Stack Developer</h2>
-                <NavBar links={links} />
+                <h2 className="text-left">full stack developer</h2>
             </Col>
         </Row>
-        {/* <h1>{ title }</h1>
-            <NavBar links={ links }/> */}
+        {/* <Row className="nav">
+            <NavBar links={links} />
+        </Row>     */}
     </Container>
 
 export default Header;

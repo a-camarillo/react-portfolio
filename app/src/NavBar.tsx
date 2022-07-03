@@ -2,6 +2,7 @@ import React from 'react';
 import { ILink } from './interfaces';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
 
 let smoothScroll = (event: React.MouseEvent<HTMLElement>, id:string) => {
     event.preventDefault();
@@ -21,9 +22,11 @@ const NavBar = ({ links }: ILinks) => {
             </Nav.Link>
     ) 
     return (
-        <Navbar className="justify-content-center" id="NavBar" bg="light" expand="sm">
-                { navList }
-        </Navbar>
+        <Container className="d-flex nav justify-content-md-center" fluid>
+            <Navbar id="NavBar" expand="md">
+                    { navList }
+            </Navbar>
+        </Container>
     )
 };
 

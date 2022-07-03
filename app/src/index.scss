@@ -1,0 +1,43 @@
+@import "custom";
+
+* {
+    background-color: $gray-600;
+    color: $light;
+    font-family: monospace;
+}
+
+#Home, #About, #Projects, #Tools, #Connect {
+    height: 100vh;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+.header.container * {
+    background-color: $teal-800;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+}
+
+.nav, .nav * {
+    background-color: $teal-500;
+    color: $light;
+}
+
+.footer, .footer * {
+    background-color: $teal-500;
+}
+
+.connect a {
+    font-size: 2.5rem;
+    color: $light;
+    text-decoration: underline;
+}
+
+.caption {
+    color: $light
+}
